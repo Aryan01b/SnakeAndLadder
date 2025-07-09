@@ -1,36 +1,64 @@
-## Snake-n-Ladder
+# Snake & Ladder
 
-This is a Snake and Ladder game implemented in Python with both CLI and Pygame interfaces.
+A classic Snake and Ladder game implemented in Python with both Command Line Interface (CLI) and Pygame-based Graphical User Interface (GUI).
 
-### Features
-- **Command Line Interface (CLI)**: Play the game directly in your terminal.
-- **Pygame Interface**: Enjoy a graphical version of the game using Pygame.
+## Features
 
-### Installation
-To run this game, you need to have Python and Pygame installed on your system. Follow the steps below:
+### Player Experience
+- 🎮 **Interactive GUI**: Play with a beautiful graphical interface
+- 🖥️ **Command Line Interface**: Play directly in your terminal
+- 🎲 **Smooth Animations**: Enjoy fluid player movements and dice rolls
+- 🎨 **Visual Feedback**: Clear indicators for snakes, ladders, and player turns
 
+### Game Modes
+- **Single Player**: Play against the computer
+- **Multiplayer**: Play with friends on the same device
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- Pygame 2.5.0 or higher
+
+### Setup
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/Aryan01b/SnakeAndLadder.git
-    cd SnakeAndLadder
-    ```
+   ```sh
+   git clone https://github.com/Aryan01b/SnakeAndLadder.git
+   cd SnakeAndLadder
+   ```
 
 2. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-### How to Play
-You can choose to play the game in either CLI mode or Pygame mode.
+## 🎮 How to Play
 
-#### CLI Mode
-To start the game in CLI mode, run:
+### GUI Mode (Recommended)
+To start the game with the graphical interface:
+```sh
+python run_game.py
+```
+
+#### Controls
+- **Roll Dice**: Click the dice or press `SPACEBAR`
+- **New Game**: Press `R`
+- **Quit**: Press `Q` or `ESC`
+
+### CLI Mode
+To play in the terminal:
 ```sh
 python snake_and_ladder_cli.py
 ```
 
-#### Pygame Mode
-To start the game in Pygame mode, run:
+## 📚 Documentation
+
+- [User Guide](docs/USER_GUIDE.md) - Complete guide to playing the game
+- [Developer Documentation](docs/DEVELOPER.md) - Technical details for developers
+
+## 🛠️ Development
+
+Interested in contributing? Check out our [Developer Documentation](docs/DEVELOPER.md) for setup instructions, code structure, and contribution guidelines.
 ```sh
 python snake_and_ladder_pygame.py
 ```
