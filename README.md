@@ -1,28 +1,32 @@
-# Snake & Ladder (CLI Version)
+# Snake & Ladder
 
-🐍 A beautiful and feature-rich command-line implementation of the classic Snake and Ladder game, built with Python and Rich.
+🎮 A classic Snake and Ladder game with both Command Line Interface (CLI) and Graphical User Interface (GUI) implementations.
 
 ## ✨ Features
 
+### CLI Version
 - 🎨 **Beautiful Terminal Interface** - Colorful and responsive UI with Rich
 - 🎮 **2-4 Player Support** - Play with friends on the same machine
 - 🎲 **Animated Dice Rolling** - Visual dice roll animation
 - 🐍 **Snake & Ladder Indicators** - Clear visual cues for all game elements
-- 🔄 **Interactive Gameplay** - Simple and intuitive controls
-- 🏆 **Win Detection** - Automatic winner announcement
-- 🔄 **Play Again** - Quick restart option after game ends
+
+### GUI Version
+- 🖥️ **Graphical Interface** - Play with a beautiful Pygame-based UI
+- 🎨 **Visual Animations** - Smooth player movements and dice rolls
+- 🎮 **Interactive Controls** - Click to roll, intuitive interface
+- 🎵 **Sound Effects** - Immersive gameplay experience
 
 ## 🚀 Installation
 
 ### Prerequisites
 - Python 3.7 or higher
+- Git (for cloning the repository)
 
 ### Quick Start
-1. Clone the repository and switch to the CLI branch:
+1. Clone the repository:
    ```sh
    git clone https://github.com/Aryan01b/SnakeAndLadder.git
    cd SnakeAndLadder
-   git checkout cli
    ```
 
 2. Install the required dependencies:
@@ -30,13 +34,33 @@
    pip install -r requirements.txt
    ```
 
-3. Start the game:
+## 🎮 How to Play
+
+### CLI Version
+1. Switch to the CLI branch:
+   ```sh
+   git checkout cli
+   ```
+
+2. Run the CLI version:
    ```sh
    python SnakeAndLadder(CLI).py
    ```
 
-## 🎮 How to Play
+### GUI Version
+1. Switch to the main branch:
+   ```sh
+   git checkout main
+   ```
 
+2. Run the GUI version:
+   ```sh
+   python run_game.py
+   ```
+
+## 📖 Game Instructions
+
+### CLI Version
 1. **Start the Game**:
    ```sh
    python SnakeAndLadder(CLI).py
@@ -59,7 +83,29 @@
    - Avoid snakes (🐍) or slide down
    - First to reach 100 wins!
 
-### 🎯 Game Rules
+### GUI Version
+1. **Start the Game**:
+   ```sh
+   python run_game.py
+   ```
+
+2. **Main Menu**:
+   - Click "Start Game" to begin
+   - Click "How to Play" for instructions
+   - Click "Quit" to exit
+
+3. **Game Setup**:
+   - Select number of players (2-4)
+   - Enter player names
+   - Choose token colors
+
+4. **Gameplay**:
+   - Click the dice to roll
+   - Watch your token move automatically
+   - Follow on-screen prompts
+   - First to reach 100 wins!
+
+### 🎯 Game Rules (Both Versions)
 - Players take turns rolling a six-sided die
 - Move your token forward the number of spaces shown on the die
 - If you land on the bottom of a ladder, climb up to the top
@@ -71,15 +117,26 @@
 
 ```
 snake-and-ladder/
-├── SnakeAndLadder(CLI).py  # Main game file
-├── requirements.txt         # Dependencies
-└── README.md               # This file
+├── cli/
+│   └── SnakeAndLadder(CLI).py  # CLI version main file
+├── gui/
+│   ├── run_game.py            # GUI version main file
+│   ├── assets/                # Game assets (images, sounds)
+│   └── src/                   # Source code for GUI version
+├── requirements.txt           # Dependencies
+└── README.md                 # This file
 ```
 
 ## 🛠 Dependencies
 
+### CLI Version
 - [Rich](https://github.com/Textualize/rich) - Beautiful terminal formatting
 - [Colorama](https://pypi.org/project/colorama/) - Cross-platform colored terminal text
+
+### GUI Version
+- [Pygame](https://www.pygame.org/) - Game development library
+- [Numpy](https://numpy.org/) - For numerical operations
+- [Random2](https://pypi.org/project/random2/) - Better random number generation
 
 ## 🤝 Contributing
 
